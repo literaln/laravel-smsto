@@ -1,0 +1,18 @@
+{
+    "name": "nickmel/laravel-sms.to",
+    "description": "A Laravel package to hook up to the SMS.to REST API",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicholas Meletiou",
+            "email": "nicholas.mel@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
