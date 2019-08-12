@@ -11,5 +11,7 @@ return [
 
     'base_url' => env('SMS_TO_BASE_URL', 'https://api.sms.to/v1'),
 
-    'callback_url' => env('SMS_TO_CALLBACK_URL', '')
+    'callback_url' => env('SMS_TO_CALLBACK_URL', ''),
+
+    'sender_id' => env('SMS_TO_SENDER_ID', 'SMSTO')
 ];
