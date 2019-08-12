@@ -49,9 +49,6 @@
             "aliases": {
                 "SMSTo": "Nickmel\\SMSTo\\SMSToFacade"
             }
-        },
-        "branch-alias": {
-            "master": "0.1-dev"
         }
     }
 }
