@@ -51,7 +51,7 @@
             }
         },
         "branch-alias": {
-            "master": "0.1"
+            "master": "0.1-dev"
         }
     }
 }
