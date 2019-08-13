@@ -24,9 +24,7 @@ class SMSToTest extends TestCase
     public function testGetBalance()
     {
         $response = \SMSTo::getBalance();
-        dump($response);
         $this->assertIsArray($response);
         $this->assertNotEmpty($response);
-        $this->assertArrayHasKey('balance', $response) || $this->assertArrayHasKey('message', $response);
     }
 }
