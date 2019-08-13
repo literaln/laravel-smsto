@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/nickmel/laravel-smsto/v/stable?format=flat-square)](https://packagist.org/packages/nickmel/laravel-smsto)
+[![Build Status](https://travis-ci.org/literaln/laravel-smsto.svg?branch=master)](https://travis-ci.org/literaln/laravel-smsto)
+[![License](https://poser.pugx.org/nickmel/laravel-smsto/license?format=flat-square)](https://packagist.org/packages/nickmel/laravel-smsto)
+[![Total Downloads](https://poser.pugx.org/nickmel/laravel-smsto/downloads?format=flat-square)](https://packagist.org/packages/nickmel/laravel-smsto)
+
 ## SMS.to library for Laravel 5.8
 Laravel package to provide integration with SMS.to REST API. Visit https://sms.to/ to create an account and obtain API credentials.
 
