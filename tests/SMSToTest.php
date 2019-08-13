@@ -3,32 +3,31 @@
 
 namespace Nickmel\SMSTo\Test;
 
-use Orchestra\Testbench\TestCase;
-
+/**
+ * Class SMSToTest
+ * @package Nickmel\SMSTo\Test
+ */
 class SMSToTest extends TestCase
 {
-    public function get_balance_test()
+    /**
+     * Test the configuration of the client
+     */
+    public function testConfig()
+    {
+        $this->assertNotNull(env('SMS_TO_CLIENT_ID'));
+        $this->assertNotNull(config('laravel-sms-to.client_id'));
+    }
+
+    /**
+     * Test the getBalance() method
+     */
+    public function testGetBalance()
     {
         $response = \SMSTo::getBalance();
-        $response->assertStatus(200);
-    }
-
-    protected function getPackageProviders($app)
-    {
-        return [
-            'NickMel\SMSTo\SMSToServiceProvider'
-        ];
-    }
-
-    protected function getPackageAliases($app)
-    {
-        return [
-            'SMSTo' => 'Nickmel\SMSTo\SMSToFacade'
-        ];
-    }
-
-    protected function setUp(): void
-    {
-        parent::setUp();
+        $this->assertIsArray($response);
+        $this->assertNotEmpty($response);
+        $this->assertArrayHasKey('balance', $response);
+        $this->assertArrayHasKey('currency', $response);
+        $this->assertArrayHasKey('sms_count', $response);
     }
 }
