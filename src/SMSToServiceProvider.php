@@ -44,7 +44,7 @@ class SMSToServiceProvider extends ServiceProvider
         $configPath = __DIR__ . '/../config/' . $this->configName . '.php';
         $this->publishes([
             $configPath => config_path($this->configName . '.php')
-        ], 'config');
+        ], $this->configName);
     }
 
     /**
