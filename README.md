@@ -64,5 +64,4 @@ $senderId = 'SENDERID';
 SMSTo::sendMultiple($message, $recipients, $senderId);
 ```
 
-
 - - - 

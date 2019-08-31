@@ -3,6 +3,9 @@
 
 namespace Nickmel\SMSTo\Test;
 
+
+use Illuminate\Support\Facades\Notification;
+
 /**
  * Class SMSToTest
  * @package Nickmel\SMSTo\Test
@@ -26,5 +29,12 @@ class SMSToTest extends TestCase
         $response = \SMSTo::getBalance();
         $this->assertIsArray($response);
         $this->assertNotEmpty($response);
+    }
+
+    public function testNotification()
+    {
+        Notification::fake();
+
+        Notification::assertNothingSent();
     }
 }
