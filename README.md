@@ -64,4 +64,9 @@ $senderId = 'SENDERID';
 SMSTo::sendMultiple($message, $recipients, $senderId);
 ```
 
+##### Using the Notification channel
+```php
+Notifications in Laravel can be send to custom channels.
+```
+
 - - - 
